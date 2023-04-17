@@ -8,7 +8,7 @@ export default (): ReactElement => {
 
   return (
     <View style={{flex: 1, flexDirection: 'column'}}>
-      <Screen1 onPress={() => router.push('tabs/screen2')} />
+      <Screen1 onPress={() => router.push('(tabs)/screen2')} />
     </View>
   );
 };

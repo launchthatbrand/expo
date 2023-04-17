@@ -25,7 +25,7 @@ function Page(): ReactElement {
 
   return (
     <Container>
-      <StyledText testID="myText">Screen 1</StyledText>
+      <StyledText testID="myText">Drawer Screen 1</StyledText>
       <Button
         // @ts-ignore
         onPress={(): void => navigation.openDrawer()}

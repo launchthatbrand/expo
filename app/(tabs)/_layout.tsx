@@ -37,10 +37,39 @@ function MaterialBottomTabNavigator(): ReactElement {
         screenOptions={{
           tabBarIcon: ({focused}): React.ReactElement => TabBarIcon(focused),
         }}
-      />
-      <View style={{position: 'absolute', top: 0, height: 90}}>
-        <Header />
-      </View>
+      >
+        <Tabs.Screen
+          name="index"
+          options={{
+            title: 'Home',
+            headerShown: false,
+          }}
+        />
+        <Tabs.Screen
+          name="screen2"
+          options={{
+            title: 'Screen 2',
+            headerShown: false,
+          }}
+        />
+        <Tabs.Screen
+          name="(screen3)"
+          options={{
+            title: 'Screen 3',
+            headerShown: false,
+          }}
+        />
+        <Tabs.Screen
+          name="screen4"
+          options={{
+            title: 'Screen 4',
+            headerShown: false,
+          }}
+        />
+      </Tabs>
+      {/* <View style={{position: 'absolute', top: 0, height: 100}}>
+        {<Header />}
+      </View> */}
     </>
   );
 }
